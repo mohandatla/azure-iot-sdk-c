@@ -65,7 +65,7 @@ MU_DEFINE_ENUM_STRINGS(PROV_DEVICE_RESULT, PROV_DEVICE_RESULT_VALUE);
 MU_DEFINE_ENUM_STRINGS(PROV_DEVICE_REG_STATUS, PROV_DEVICE_REG_STATUS_VALUES);
 
 static const char* global_prov_uri = "global.azure-devices-provisioning.net";
-static const char* id_scope = "[ID Scope]";
+static const char* id_scope = "0ne000001FF";
 
 static bool g_use_proxy = false;
 static const char* PROXY_ADDRESS = "127.0.0.1";
@@ -154,8 +154,8 @@ static void register_device_callback(PROV_DEVICE_RESULT register_result, const c
 int main()
 {
     SECURE_DEVICE_TYPE hsm_type;
-    //hsm_type = SECURE_DEVICE_TYPE_TPM;
-    hsm_type = SECURE_DEVICE_TYPE_X509;
+    hsm_type = SECURE_DEVICE_TYPE_TPM;
+    //hsm_type = SECURE_DEVICE_TYPE_X509;
     //hsm_type = SECURE_DEVICE_TYPE_SYMMETRIC_KEY;
 
     bool traceOn = false;
