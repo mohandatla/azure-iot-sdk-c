@@ -27,9 +27,9 @@
 //
 // The protocol you wish to use should be uncommented
 //
-#define SAMPLE_MQTT
+//#define SAMPLE_MQTT
 //#define SAMPLE_MQTT_OVER_WEBSOCKETS
-//#define SAMPLE_AMQP
+#define SAMPLE_AMQP
 //#define SAMPLE_AMQP_OVER_WEBSOCKETS
 //#define SAMPLE_HTTP
 
