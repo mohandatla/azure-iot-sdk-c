@@ -246,6 +246,10 @@ int main()
     }
     else
     {
+        (void)printf("\r\nDevice registration completed successfully.\r\n");
+        (void)printf("\r\n Press any key to send messages to cloud\r\n");
+        (void)getchar();
+
         IOTHUB_CLIENT_TRANSPORT_PROVIDER iothub_transport;
 
         // Protocol to USE - HTTP, AMQP, AMQP_WS, MQTT, MQTT_WS
